@@ -1,5 +1,5 @@
 <template>
-  <div v-if="isRecordInserted" class="popup-message">
+  <div v-if="isRecordUpdeted" class="popup-message">
     Record Updated Successfully!
   </div>
 
@@ -26,7 +26,7 @@ export default {
       SchoolMaster:{
         SchoolName: "",
       },
-      isRecordInserted: false,
+      isRecordUpdeted: false,
     };
   },
   components: {
@@ -39,10 +39,10 @@ methods:{
       });
       if (result.status == 200) {
         // Assuming the record was successfully inserted
-        this.isRecordInserted = true;        
+        this.isRecordUpdeted = true;        
         // Optionally, you can also set a timer to hide the pop-up message after a few seconds
         setTimeout(() => {
-          this.isRecordInserted = false;
+          this.isRecordUpdeted = false;
         }, 3000); // Hide after 3 seconds (adjust as needed)
       } else {
         alert("have any error");

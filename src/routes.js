@@ -4,10 +4,13 @@ import loginUser from './components/Login.vue'
 import IndexPage from './components/Index.vue'
 import ManageSchool from './components/ManageSchool'
 import ManageProgram from './components/ManageProgram'
-import AddSchool from './components/AddSchool'
-import UpdataSchool from './components/UpdateSchool'
-import AddProgram from './components/AddProgram'
+import ManageCompany from './components/ManageCompany'
+import UpdateSchool from './components/UpdateSchool'
 import UpdateProgram from './components/UpdateProgram'
+import UpdateCompany from './components/UpdateCompany'
+import AddProgram from './components/AddProgram'
+import AddCompany from './components/AddCompany'
+import AddSchool from './components/AddSchool'
 import DemoPage from './components/Demo'
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -31,7 +34,7 @@ const routes = [
         name: 'AddSchool', component: AddSchool, path: '/AddSchool',
     },
     {
-        name: 'UpdataSchool', component: UpdataSchool, path: '/UpdateSchool/:id',
+        name: 'UpdateSchool', component: UpdateSchool, path: '/UpdateSchool/:id',
     },
       
     {
@@ -41,7 +44,16 @@ const routes = [
         name: 'AddProgram', component: AddProgram, path: '/AddProgram',
     },
     {
-        name: 'UpdataProgram', component: UpdateProgram, path: '/UpdateProgram/:id',
+        name: 'UpdateProgram', component: UpdateProgram, path: '/UpdateProgram/:id',
+    },
+    {
+        name: 'ManageCompany', component: ManageCompany, path: '/Company',
+    },
+    {
+        name: 'AddCompany', component: AddCompany, path: '/AddCompany',
+    },
+    {
+        name: 'UpdateCompany', component: UpdateCompany, path: '/UpdateCompany/:id',
     },
     {
         name: 'DemoPage', component: DemoPage, path: '/Demo',

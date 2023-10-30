@@ -3,6 +3,7 @@
     <router-link to="/Home">Home</router-link>
     <router-link to="/school">Manage School</router-link>
     <router-link to="/program">Manage Program</router-link>
+    <router-link to="/Company">Manage Company</router-link>
     <router-link to="/Demo">demo icon</router-link>
 
     <a v-on:click="logout" href="Home">Logout</a>

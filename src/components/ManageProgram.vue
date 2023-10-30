@@ -1,7 +1,7 @@
 <template>
     <Hearder />
     <p class="new">
-      <router-link to="./AddProgram">Add New School</router-link>
+      <router-link to="./AddProgram">Add new Program </router-link>
     </p>
     <table class="my-class">
       <tr>
